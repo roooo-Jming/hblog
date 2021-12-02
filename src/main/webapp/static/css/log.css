@@ -1,0 +1,67 @@
+@charset "utf-8";
+
+.content {
+    position: relative;
+    width: 1000px;
+    margin: 30px 180px 0px 180px;
+}
+
+.input-panel {
+    position: relative;
+    width: 500px;
+    margin: 50px auto 20px;
+    border: solid 1px #6b9bce;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 2px #364041;
+}
+
+/*.form1 dl {*/
+/*    margin: 20px 50px;*/
+/*}*/
+
+.form1 legend{
+    font-size: 200px;
+}
+
+.form1 p{
+    font-size: 100px;
+    text-align: center;
+}
+
+select{
+    width: 90%;
+    height: 35px;
+    text-align: center;
+    text-align-last:justify;
+    position: relative;
+}
+
+option{
+    font-size: medium;
+}
+
+/*.form1 dl dt {*/
+/*    margin: 10px 0px 30px;*/
+/*    padding: 0px;*/
+/*    font-size: 16px;*/
+/*    font-weight: bold;*/
+/*    letter-spacing: 2px;*/
+/*    text-align: center;*/
+/*}*/
+
+/*.form1 dl dd {*/
+/*    margin: 16px 0px;*/
+/*    padding: 0px;*/
+/*}*/
+
+/*.form1 dl dd textarea {*/
+/*    height: 120px;*/
+/*}*/
+
+.btn-groups {
+    text-align: -moz-center;
+}
+
+.form1 dl dd input:nth-child(n+2) {
+    margin-left: 20px;
+}

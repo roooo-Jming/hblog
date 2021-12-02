@@ -1,0 +1,52 @@
+#tomcat 端口设置
+server:
+  port: 80
+  tomcat:
+    uri-encoding: UTF-8
+#jsp view的前缀及后缀配置
+spring:
+  mvc:
+    view:
+      prefix: /WEB-INF/jsp/
+      suffix: .jsp
+  http:
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
+  messages:
+    encoding: UTF-8
+#静态资源映射
+  #  static-path-pattern: classpath:/static/**
+#DataSource 数据源配置Mysql
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/boot_hblog?useSSL=false&serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&allowPublicKeyRetrieval=true
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 123
+    tomcat:
+      max-active: 20
+      initial-size: 10
+      max-idle: 20
+#邮件配置
+  mail:
+    default-encoding: utf-8
+    host: smtp.163.com
+    username: 18292166117@163.com
+    password: luo88634128@
+    port: 25
+    protocol: smtp
+#mybatis 配置
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.ruixin.bean
+#日志配置
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+logging:
+  level: warn
+
+mail:
+  href: http://127.0.0.1:81
+
+
